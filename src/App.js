@@ -5,6 +5,7 @@ import Welcome from './components/Welcome'
 import Hello from './components/Hello';
 import Counter from './components/Counter';
 import ParentComponent from './components/ParentComponent';
+import ConditionalRendering from './components/ConditionalRendering';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Hello />
       <Counter /> */}
       <ParentComponent />
+      <ConditionalRendering />
     </div>
   );
 }
