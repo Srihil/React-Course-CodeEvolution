@@ -8,6 +8,7 @@ import ParentComponent from './components/ParentComponent';
 import ConditionalRendering from './components/ConditionalRendering';
 import NameList from './components/NameList';
 import Stylesheet from './components/Stylesheet';
+import Form from './components/Form';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <ConditionalRendering /> */}
       {/* <NameList /> */}
       <Stylesheet primary={true}/>
+      <Form />
     </div>
   );
 }
