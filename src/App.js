@@ -4,6 +4,7 @@ import Greet from './components/Greet'
 import Welcome from './components/Welcome'
 import Hello from './components/Hello';
 import Counter from './components/Counter';
+import ParentComponent from './components/ParentComponent';
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
         <h2>Children example</h2>
       </Greet>
       <Welcome name="sahil"/>
-      <Hello /> */}
-      <Counter />
+      <Hello />
+      <Counter /> */}
+      <ParentComponent />
     </div>
   );
 }
