@@ -1,19 +1,19 @@
 // import logo from './logo.svg';
-import './App.css';
-import Greet from './components/Greet'
-import Welcome from './components/Welcome'
-import Hello from './components/Hello';
-import Counter from './components/Counter';
-import ParentComponent from './components/ParentComponent';
-import ConditionalRendering from './components/ConditionalRendering';
-import NameList from './components/NameList';
-import Stylesheet from './components/Stylesheet';
-import Form from './components/Form';
-import LifecycleA from './components/LifecycleA';
-import ParentComp from './components/ParentComp';
-import Refs from './components/Refs';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+import "./App.css";
+import Greet from "./components/Greet";
+import Welcome from "./components/Welcome";
+import Hello from "./components/Hello";
+import Counter from "./components/Counter";
+import ParentComponent from "./components/ParentComponent";
+import ConditionalRendering from "./components/ConditionalRendering";
+import NameList from "./components/NameList";
+import Stylesheet from "./components/Stylesheet";
+import Form from "./components/Form";
+import LifecycleA from "./components/LifecycleA";
+import ParentComp from "./components/ParentComp";
+import Refs from "./components/Refs";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
 
 function App() {
   return (
@@ -32,9 +32,21 @@ function App() {
       <Form />
       <LifecycleA />
       <ParentComp /> */}
-      <ClickCounter />
-      <HoverCounter />
+      {/* <ClickCounter />
+      <HoverCounter /> */}
       {/* <Refs /> */}
+
+      <Counter
+        render={(count, incrementCount) => (
+          <ClickCounter count={count} incrementCount={incrementCount} />
+        )}
+      />
+
+      <Counter
+        render={(count, incrementCount) => (
+          <HoverCounter count={count} incrementCount={incrementCount} />
+        )}
+      />
     </div>
   );
 }
