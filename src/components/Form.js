@@ -34,7 +34,7 @@ class Form extends Component {
       `${this.state.username} ${this.state.comments} ${this.state.topic}`
     );
 
-    event.preventDefault();
+    // event.preventDefault();
   };
 
   render() {

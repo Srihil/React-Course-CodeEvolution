@@ -9,6 +9,9 @@ import ConditionalRendering from './components/ConditionalRendering';
 import NameList from './components/NameList';
 import Stylesheet from './components/Stylesheet';
 import Form from './components/Form';
+import LifecycleA from './components/LifecycleA';
+
+
 
 function App() {
   return (
@@ -23,8 +26,9 @@ function App() {
       <ParentComponent />
       <ConditionalRendering /> */}
       {/* <NameList /> */}
-      <Stylesheet primary={true}/>
-      <Form />
+      {/* <Stylesheet primary={true}/>
+      <Form /> */}
+      <LifecycleA />
     </div>
   );
 }
