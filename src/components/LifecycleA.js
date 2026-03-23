@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import LifecycleB from "./LifecycleB";
 
 class LifecycleA extends Component {
-
   constructor(props) {
     super(props);
 
@@ -18,9 +17,25 @@ class LifecycleA extends Component {
     return null;
   }
 
-  componentDidMount() {
-    console.log("LifecycleA componentDidMount");
+  shouldComponentUpdate() {
+    console.log("LifecycleA shouldComponentUpdate");
+    return true;
   }
+
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    console.log("LifecycleA getSnapshotBeforeUpdate");
+    return null;
+  }
+
+  componentDidUpdate() {
+    console.log("LifecycleA componentDidUpdate");
+  }
+
+  changeState = () => {
+    this.setState({
+      name: "Sriya"
+    });
+  };
 
   render() {
     console.log("LifecycleA render");
@@ -28,6 +43,7 @@ class LifecycleA extends Component {
     return (
       <div>
         Lifecycle A
+        <button onClick={this.changeState}>Change State</button>
         <LifecycleB />
       </div>
     );
