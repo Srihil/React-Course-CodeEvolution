@@ -7,6 +7,7 @@ import Counter from './components/Counter';
 import ParentComponent from './components/ParentComponent';
 import ConditionalRendering from './components/ConditionalRendering';
 import NameList from './components/NameList';
+import Stylesheet from './components/Stylesheet';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       <Counter />
       <ParentComponent />
       <ConditionalRendering /> */}
-      <NameList />
+      {/* <NameList /> */}
+      <Stylesheet primary={true}/>
     </div>
   );
 }
