@@ -12,6 +12,8 @@ import Form from './components/Form';
 import LifecycleA from './components/LifecycleA';
 import ParentComp from './components/ParentComp';
 import Refs from './components/Refs';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 function App() {
   return (
@@ -30,7 +32,9 @@ function App() {
       <Form />
       <LifecycleA />
       <ParentComp /> */}
-      <Refs />
+      <ClickCounter />
+      <HoverCounter />
+      {/* <Refs /> */}
     </div>
   );
 }
