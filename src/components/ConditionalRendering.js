@@ -35,9 +35,6 @@ class ConditionalRendering extends Component {
           this.state.isLoggedIn &&
           <h2>You are logged in</h2>
         }
-
-        {/* ------------------------------------------------ */}
-
         {/* 1️⃣ If/Else Approach (Used outside return)
 
         render() {

@@ -6,6 +6,7 @@ import Hello from './components/Hello';
 import Counter from './components/Counter';
 import ParentComponent from './components/ParentComponent';
 import ConditionalRendering from './components/ConditionalRendering';
+import NameList from './components/NameList';
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
       </Greet>
       <Welcome name="sahil"/>
       <Hello />
-      <Counter /> */}
+      <Counter />
       <ParentComponent />
-      <ConditionalRendering />
+      <ConditionalRendering /> */}
+      <NameList />
     </div>
   );
 }
