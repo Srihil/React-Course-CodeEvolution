@@ -10,7 +10,7 @@ import NameList from './components/NameList';
 import Stylesheet from './components/Stylesheet';
 import Form from './components/Form';
 import LifecycleA from './components/LifecycleA';
-
+import ParentComp from './components/ParentComp';
 
 
 function App() {
@@ -24,11 +24,12 @@ function App() {
       <Hello />
       <Counter />
       <ParentComponent />
-      <ConditionalRendering /> */}
-      {/* <NameList /> */}
-      {/* <Stylesheet primary={true}/>
-      <Form /> */}
+      <ConditionalRendering />
+      <NameList />
+      <Stylesheet primary={true}/>
+      <Form />
       <LifecycleA />
+      <ParentComp /> */}
     </div>
   );
 }
