@@ -18,6 +18,8 @@ import ComponentC from "./components/ComponentC";
 import GetRequest from "./components/GetRequest";
 import PostRequest from "./components/PostRequest";
 import HookCounterTwo from "./components/HookCounterTwo";
+import HookCounterThree from "./components/HookCounterThree";
+import HookCounterFour from "./components/HookCounterFour";
 
 function App() {
   return (
@@ -56,7 +58,9 @@ function App() {
     </UserContext.Provider> */}
     {/* <GetRequest /> */}
     {/* <PostRequest /> */}
-    <HookCounterTwo />
+    {/* <HookCounterTwo /> */}
+    {/* <HookCounterThree /> */}
+    <HookCounterFour />
     </div>
   );
 }
