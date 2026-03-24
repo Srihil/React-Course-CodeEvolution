@@ -23,6 +23,7 @@ import HookCounterFour from "./components/HookCounterFour";
 import HookCounterOne from "./components/HookCounterOne";
 import CounterOne from "./components/CounterOne";
 import InputFocus from "./components/InputFocus";
+import CounterTwo from "./components/CounterTwo";
 
 function App() {
   return (
@@ -66,7 +67,8 @@ function App() {
     {/* <HookCounterFour /> */}
     {/* <HookCounterOne /> */}
     {/* <CounterOne /> */}
-    <InputFocus />
+    {/* <InputFocus /> */}
+    <CounterTwo />
     </div>
   );
 }
