@@ -1,18 +1,25 @@
 import React, { useState, useEffect } from "react";
+import HookCounterThree from "./HookCounterThree";
 
 function HookCounterOne() {
 
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    document.title = `You clicked ${count} times`;
-  });
+
+    const interval = setInterval(() => {
+      setCount(prevCount => prevCount + 1);
+    }, 1000);
+
+    return () => {
+      clearInterval(interval);
+    };
+
+  }, []);
 
   return (
     <div>
-      <button onClick={() => setCount(count + 1)}>
-        Click {count} times
-      </button>
+      {count}
     </div>
   );
 }
