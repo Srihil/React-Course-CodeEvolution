@@ -25,6 +25,7 @@ import CounterOne from "./components/CounterOne";
 import InputFocus from "./components/InputFocus";
 import CounterTwo from "./components/CounterTwo";
 import ParentComponentOne from "./components/ParentComponentOne";
+import UseState from "./components/UseState/UseState";
 
 function App() {
   return (
@@ -70,7 +71,8 @@ function App() {
     {/* <CounterOne /> */}
     {/* <InputFocus /> */}
     {/* <CounterTwo /> */}
-    <ParentComponentOne />
+    {/* <ParentComponentOne /> */}
+    <UseState />
     </div>
   );
 }
