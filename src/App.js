@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import "./App.css";
 import Greet from "./components/Greet";
 import Welcome from "./components/Welcome";
@@ -16,6 +15,8 @@ import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
 import UserContext from "./components/userContext";
 import ComponentC from "./components/ComponentC";
+import GetRequest from "./components/GetRequest";
+import PostRequest from "./components/PostRequest";
 
 function App() {
   return (
@@ -49,9 +50,11 @@ function App() {
           <HoverCounter count={count} incrementCount={incrementCount} />
         )}
       /> */}
-    <UserContext.Provider value={"Sahil"}>
+    {/* <UserContext.Provider value={"Sahil"}>
       <ComponentC />
-    </UserContext.Provider>
+    </UserContext.Provider> */}
+    {/* <GetRequest /> */}
+    <PostRequest />
     </div>
   );
 }
