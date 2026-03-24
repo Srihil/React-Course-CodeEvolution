@@ -9,6 +9,7 @@ function HookCounterTwo() {
       setCount(prevCount => prevCount + 5);
     
   };
+  
 
   return (
     <div>

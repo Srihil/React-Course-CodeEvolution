@@ -20,6 +20,7 @@ import PostRequest from "./components/PostRequest";
 import HookCounterTwo from "./components/HookCounterTwo";
 import HookCounterThree from "./components/HookCounterThree";
 import HookCounterFour from "./components/HookCounterFour";
+import HookCounterOne from "./components/HookCounterOne";
 
 function App() {
   return (
@@ -60,7 +61,8 @@ function App() {
     {/* <PostRequest /> */}
     {/* <HookCounterTwo /> */}
     {/* <HookCounterThree /> */}
-    <HookCounterFour />
+    {/* <HookCounterFour /> */}
+    <HookCounterOne />
     </div>
   );
 }
