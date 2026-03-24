@@ -14,6 +14,8 @@ import ParentComp from "./components/ParentComp";
 import Refs from "./components/Refs";
 import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
+import UserContext from "./components/userContext";
+import ComponentC from "./components/ComponentC";
 
 function App() {
   return (
@@ -36,7 +38,7 @@ function App() {
       <HoverCounter /> */}
       {/* <Refs /> */}
 
-      <Counter
+      {/* <Counter
         render={(count, incrementCount) => (
           <ClickCounter count={count} incrementCount={incrementCount} />
         )}
@@ -46,7 +48,10 @@ function App() {
         render={(count, incrementCount) => (
           <HoverCounter count={count} incrementCount={incrementCount} />
         )}
-      />
+      /> */}
+    <UserContext.Provider value={"Sahil"}>
+      <ComponentC />
+    </UserContext.Provider>
     </div>
   );
 }
