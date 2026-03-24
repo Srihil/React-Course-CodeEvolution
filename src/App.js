@@ -17,6 +17,7 @@ import UserContext from "./components/userContext";
 import ComponentC from "./components/ComponentC";
 import GetRequest from "./components/GetRequest";
 import PostRequest from "./components/PostRequest";
+import HookCounterTwo from "./components/HookCounterTwo";
 
 function App() {
   return (
@@ -54,7 +55,8 @@ function App() {
       <ComponentC />
     </UserContext.Provider> */}
     {/* <GetRequest /> */}
-    <PostRequest />
+    {/* <PostRequest /> */}
+    <HookCounterTwo />
     </div>
   );
 }
